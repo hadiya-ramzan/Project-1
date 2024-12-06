@@ -21,7 +21,7 @@ p{
 .nav1{
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center; 
     padding-top: 1px;
     text-decoration: none;
@@ -102,19 +102,11 @@ p{
     width: 10%;
     padding: 10px;
 }
-#p1{
-    padding-bottom: 8px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
 .categories{
     width: 100%;
-    display: inline-block;
-    height: 330px;
     padding: 20px;     
     background-color: white; 
     color: black;
-    margin-left: 10px;
 }
 .categories:hover{
     box-shadow: 10px 5px 5px grey;
@@ -193,7 +185,6 @@ ul{
 .images:hover{
     box-shadow: 10px 5px 5px grey;
     cursor: pointer;
-
 }
 #off{
     background-color: white;
@@ -319,12 +310,7 @@ button{
     background-color: #172237;
     color: white;
 }
-.footer1 p{
-    font-size: 15px;
-    font-weight: 600;
-    padding-bottom: 5px;
-    color: rgb(192, 176, 176);
-}
+
 .footer-left{
     width: 60%;
     height: 80%;
@@ -357,4 +343,314 @@ button{
 .footer2 p{
     padding: 7px;
     padding-left: 45%;
+}
+@media  screen and (min-width: 360px) and (max-width: 768px){
+    *{
+        box-sizing: border-box;
+    }
+    nav{
+        width: 100%;
+        height: 300px;
+        background-color: #172237;
+    }
+    .nav1, .nav2, .hero-section, .section4{
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav1 p{
+        width: 100%;
+        text-align: center;
+        font-weight: 900;
+        padding-bottom: 15px;
+    }
+    .nav1 a{
+        padding: 5px;
+        font-weight: 600;
+    }
+    .nav1 img{
+        display: none;
+    }
+    .nav2{
+        margin-top: 20px;
+    }
+    #logo{
+        margin: 5px;
+    }
+    .search-bar{
+        margin: 5px;
+        width: 85%;
+    }
+    .nav-cart, .sign-in{
+        display: none;
+    }
+    .box{
+        width: 100%;
+    }
+    .categories{
+        background-color: white;
+        width: 100%;
+        padding: 20px;
+    } 
+    ul{
+        font-size: 15px;
+    }
+    .hero-img, .box-images, .image{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .hero-img img, .box-images{
+        width: 90%;
+    }
+    .image{
+        width: 100%;
+    }
+    .options{
+        width: 95%;
+        padding: 15px;
+    }
+    #sale{
+        padding-top: 10px;
+    }
+    .section1, .section2, .section3{
+        width: 100%;
+        height: auto;
+        margin: 10px 5px 5px 5px;
+    }
+    .images{
+        background-color: white;
+        width: 100%;
+    }
+    .images:hover{
+        box-shadow: 10px 5px 5px grey;
+        cursor: pointer;
+    }
+    .img1 img{
+        display: none;
+    }
+    .img2, .img3, .img4, .img5, .img6{
+        width: 35%;
+        padding: 10px;
+    }
+    .img2 img{
+        width: 100%;
+    }
+    .img3 img{
+        width: 100%;
+    }
+    .img4 img{
+        width: 100%;
+    }
+    .img5 img{
+    width: 100%;
+    }
+    .img6 img{
+        width: 100%;
+    }
+    .section4{
+        width: 100%;
+    }
+    .section4 img{
+        width: 100%;
+    }
+    .download{
+        margin-top: 20px;
+        font-size: 12px;
+        width: 100%;
+    }
+    .download pre{
+        font-size: 10px;
+    }
+    .download img{
+        padding-top: 20px;
+        width: 180px;
+    }
+    .footer1{
+        flex-direction: row;
+        height: 250px;
+        width: 100%;
+        padding: 15px;
+    }
+    .footer-left{
+        width: 60%;
+        padding: 15px;
+        margin-top: 25px;
+        font-size: 10px;
+    }
+    .footer-left ul{
+        font-size: 10px;
+        padding: 5px;
+    }
+    .footer-right{
+        width: 40%;
+        height: 100%;
+        margin-left: 7px;
+        border-left: 2px solid white;
+    }
+    .footer-right ul{
+        font-size: 10px;
+        padding: 5px;
+    }
+    .footer2 p{
+        width: 100%;
+        height: 25px;
+        border-top: 0.2px solid white;
+        background-color: #172237;
+        font-size: 12px;
+    }
+}
+
+@media  screen and (min-width: 769px)  and (max-width: 992px){
+    *{
+        box-sizing: border-box;
+    }
+    nav{
+        width: 100%;
+        height: 140px;
+    }
+    .nav1, .nav2, .hero-section, .section4{
+        align-items: center;
+    }
+    .nav1 p{
+        padding: 5px;
+    }
+    .nav1 a{
+        font-size: 12px;
+        justify-content: space-evenly;
+        padding: 10px;
+    }
+    .nav2{
+        margin: 5px;
+    }
+    .search-bar{
+        margin: 10px;
+        margin-top: 25px;
+        width: 100%;
+    }
+    .nav-cart{
+        width: 30%;
+        padding-left: 30px;
+    } 
+    .sign-in{
+        padding: 25px;
+        width: 30%;
+    }
+    .hero-section{
+        padding-top: 10px;
+        width: 100%;
+    }
+    .box{
+        width: 25%;
+    }
+    .categories{
+        background-color: white;
+        width: 100%;
+        margin-bottom: 10px;
+    } 
+    ul{
+        font-size: 15px;
+    }
+    .hero-img{
+        width: 75%;
+        margin-bottom: 10px;
+    }
+    .hero-img img{
+        height: 350px;
+        width: 90%;
+    }
+    .box-images{
+        width: 75%;
+        height: 450px;
+    }
+    .image{
+        align-items: center;
+        margin-left: 70px;
+        width: 100%;
+    }
+    .options{
+        width: 95%;
+        padding: 15px;
+    }
+    #sale{
+        padding-top: 10px;
+    }
+    .section1, .section2, .section3{
+        width: 100%;
+        height: auto;
+        margin: 10px 5px 5px 5px;
+    }
+    .images{
+        background-color: white;
+        width: 100%;
+    }
+    .images:hover{
+        box-shadow: 10px 5px 5px grey;
+        cursor: pointer;
+    }
+    .img2, .img3, .img4, .img5, .img6{
+        width: 25%;
+        padding: 10px;
+    }
+    .details{
+        font-size: 12px;
+    }
+    .section4{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .section4 img{
+        width: 100%;
+    }
+    .download{
+        margin-top: 10px;
+        font-size: 14px;
+        width: 100%;
+    }
+    .download pre{
+        font-size: 12px;
+    }
+    .download img{
+        padding-top: 20px;
+        width: 180px;
+    } 
+    .footer-left ul{
+        margin-top: 15px;
+        font-size: 12px;
+        padding: 5px;
+    }
+    .footer-right ul{
+        margin-top: 15px;
+        font-size: 12px;
+        padding: 5px;
+    }
+    .footer2 p{
+        width: 100%;
+        border-top: 0.2px solid white;
+    }
+}
+@media  screen and (min-width: 993px)  and (max-width: 1095px){
+    .section1, .section2, .section3{
+        width: 100%;
+        height: auto;
+        margin: 10px 5px 5px 5px;
+    }
+    .images{
+        background-color: white;
+        width: 90%;
+    }
+    .images:hover{
+        box-shadow: 10px 5px 5px grey;
+        cursor: pointer;
+    }
+    .img2, .img3, .img4, .img5, .img6{
+        width: 10%;
+        padding: 20px;
+        height: auto;
+    }
+    /* .img6 {
+        display: none;
+    } */
+    .details{
+        padding-top: 10px;
+        font-size: 12px;
+    }
 }
