@@ -1,45 +1,53 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-decoration: none;
 }
-header{
+
+header {
     font-size: 12px;
     color: white;
 }
-nav{
+
+nav {
     height: 95px;
     width: 100%;
     background-color: #172237;
 }
-p{
+
+p {
     display: inline-block;
     width: 30%;
 }
-.nav1{
+
+.nav1 {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    align-items: center; 
+    align-items: center;
     padding-top: 1px;
     text-decoration: none !important;
     text-transform: capitalize;
 }
-.nav1 a{
+
+.nav1 a {
     color: white;
 }
-.nav2{
+
+.nav2 {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
 }
-#logo{
+
+#logo {
     margin-top: 15px;
     margin-left: 8px;
     width: 10rem;
 }
-.search-bar{
+
+.search-bar {
     width: 50%;
     background-color: rgb(231, 82, 28);
     display: flex;
@@ -47,7 +55,8 @@ p{
     align-items: center;
     border-radius: 2px;
 }
-#search{
+
+#search {
     width: 94%;
     height: 35px;
     color: black;
@@ -56,28 +65,35 @@ p{
     border-radius: 2px;
     outline: none;
 }
-#search-icon{
+
+#search-icon {
     width: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.nav-cart{
+
+.nav-cart {
     width: 60px;
     font-size: 14px;
     align-content: center;
     padding-left: 150px;
 }
-.sign-in{
+
+.sign-in {
     width: 70px;
     font-size: 14px;
     align-content: center;
     padding-right: 50px;
 }
-#cart , #sign, #search-icon{
+
+#cart,
+#sign,
+#search-icon {
     font-size: large;
 }
-.blog{
+
+.blog {
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -85,7 +101,8 @@ p{
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.image1{
+
+.image1 {
     width: 40%;
     position: relative;
     text-align: center;
@@ -95,25 +112,30 @@ p{
     line-height: 20px;
     text-align: left;
 }
-.image1 img{
+
+.image1 img {
     width: 110%;
     height: 380px;
     padding: 5px;
     border-radius: 15px;
 }
-.bottom-left{
+
+.bottom-left {
     position: absolute;
     bottom: 20px;
     left: 10px;
 }
-.images-box1{
+
+.images-box1 {
     width: 20%;
 }
-.images-box1 img{
+
+.images-box1 img {
     width: 125%;
     height: 200px;
 }
-.image2{
+
+.image2 {
     position: relative;
     text-align: center;
     color: white;
@@ -122,7 +144,8 @@ p{
     line-height: 20px;
     text-align: left;
 }
-.image3{
+
+.image3 {
     position: relative;
     text-align: center;
     color: white;
@@ -131,17 +154,21 @@ p{
     line-height: 20px;
     text-align: left;
 }
-.images-box2{
-    width: 20%; 
+
+.images-box2 {
+    width: 20%;
 }
-.images-box2 img{
+
+.images-box2 img {
     width: 110%;
     height: 200px;
 }
-.image{
+
+.image {
     border-radius: 10px;
 }
-.image4{
+
+.image4 {
     position: relative;
     text-align: center;
     color: white;
@@ -150,7 +177,8 @@ p{
     line-height: 20px;
     text-align: left;
 }
-.image5{
+
+.image5 {
     position: relative;
     text-align: center;
     color: white;
@@ -159,7 +187,8 @@ p{
     line-height: 20px;
     text-align: left;
 }
-button{
+
+button {
     height: 45px;
     width: 90px;
     color: white;
@@ -171,10 +200,12 @@ button{
     margin-bottom: 10px;
     margin-left: 45%;
 }
-footer{
+
+footer {
     line-height: 20px;
 }
-.footer1{
+
+.footer1 {
     height: 200px;
     padding: 30px;
     display: flex;
@@ -183,13 +214,15 @@ footer{
     background-color: #172237;
     color: white;
 }
-.footer1 p{
+
+.footer1 p {
     font-size: 15px;
     font-weight: 600;
     padding-bottom: 5px;
     color: rgb(192, 176, 176);
 }
-.footer-left{
+
+.footer-left {
     width: 60%;
     height: 80%;
     display: flex;
@@ -199,7 +232,8 @@ footer{
     margin-top: 0px;
     font-size: 13px;
 }
-.footer-right{
+
+.footer-right {
     width: 40%;
     height: 80%;
     display: flex;
@@ -210,175 +244,224 @@ footer{
     border-left: 2px solid white;
     font-size: 13px;
 }
-#list1, #list2{
+
+#list1,
+#list2 {
     padding: 20px;
 }
-.footer2{
+
+.footer2 {
     height: 40px;
     border-top: 0.2px solid white;
     background-color: #172237;
     color: white;
 }
-.footer2 p{
+
+.footer2 p {
     padding: 7px;
     padding-left: 45%;
 }
 
-        /* media queries */
+/* media queries */
 
-@media  screen and (min-width: 360px) and (max-width: 768px){
-    *{
+@media screen and (min-width: 360px) and (max-width: 768px) {
+    * {
         box-sizing: border-box;
         margin: 0;
     }
-    nav{
+
+    nav {
         width: auto;
         height: auto;
         background-color: #172237;
     }
-    .nav1, .nav2{
+
+    .nav1,
+    .nav2 {
         flex-direction: column;
         align-items: center;
     }
-    .nav1 p{
+
+    .nav1 p {
         width: 100%;
         text-align: center;
         font-weight: 900;
         padding-bottom: 15px;
     }
-    .nav1 a{
+
+    .nav1 a {
         padding: 5px;
         font-weight: 600;
     }
-    .nav1 img{
+
+    .nav1 img {
         display: none;
     }
-    .nav2{
+
+    .nav2 {
         margin-top: 20px;
     }
-    #logo{
+
+    #logo {
         margin: 5px;
     }
-    .search-bar{
+
+    .search-bar {
         margin: 5px;
         width: 85%;
     }
-    .nav-cart, .sign-in{
+
+    .nav-cart,
+    .sign-in {
         display: none;
     }
-    .blog{
+
+    .blog {
         width: 100%;
         flex-direction: column;
     }
-    .image1, .images-box1, .images-box2{
+
+    .image1,
+    .images-box1,
+    .images-box2 {
         width: 85%;
     }
-    .image1 img{
+
+    .image1 img {
         width: 100%;
     }
-    .images-box1 img{
-        width: 100%;
-        height: 200px;
-    }
-    .images-box2 img{
+
+    .images-box1 img {
         width: 100%;
         height: 200px;
     }
-    .image{
+
+    .images-box2 img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .image {
         border-radius: 15px;
     }
-    .footer1{
+
+    .footer1 {
         display: none;
     }
-    .footer2 p{
+
+    .footer2 p {
         width: 100%;
         height: 20px;
         font-size: 12px;
     }
 }
 
-@media  screen and (min-width: 769px)  and (max-width: 992px){
-    *{
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    * {
         box-sizing: border-box;
     }
-    nav{
+
+    nav {
         width: 100%;
         height: 140px;
     }
-    .nav1, .nav2{
+
+    .nav1,
+    .nav2 {
         align-items: center;
     }
-    .nav1 p{
+
+    .nav1 p {
         padding: 5px;
     }
-    .nav1 a{
+
+    .nav1 a {
         font-size: 12px;
         justify-content: space-evenly;
         padding: 10px;
     }
-    .nav2{
+
+    .nav2 {
         margin: 5px;
     }
-    .search-bar{
+
+    .search-bar {
         margin: 10px;
         margin-top: 25px;
         width: 100%;
     }
-    .nav-cart{
+
+    .nav-cart {
         width: 30%;
         padding-left: 30px;
-    } 
-    .sign-in{
+    }
+
+    .sign-in {
         padding: 25px;
         width: 30%;
     }
 
-    .blog{
+    .blog {
         width: 100%;
     }
-    .image1{
+
+    .image1 {
         width: 90%;
         margin-right: 5px;
-    } 
-    .images-box1, .images-box2{
+    }
+
+    .images-box1,
+    .images-box2 {
         width: 50%;
     }
-    .image1{
+
+    .image1 {
         font-size: 15px;
     }
-    .image2, .image3, .image4, .image5{
+
+    .image2,
+    .image3,
+    .image4,
+    .image5 {
         font-size: 10px;
     }
-    .image1 img{
+
+    .image1 img {
         width: 100%;
     }
-    .images-box1 img{
+
+    .images-box1 img {
         width: 95%;
         height: 200px;
     }
-    .images-box2 img{
+
+    .images-box2 img {
         width: 95%;
         height: 200px;
     }
-    .image{
+
+    .image {
         border-radius: 15px;
     }
-    .footer{
+
+    .footer {
         height: 220px;
     }
-    .footer-left ul{
+
+    .footer-left ul {
         margin-top: 15px;
         font-size: 10px;
         padding: 5px;
     }
-    .footer-right ul{
+
+    .footer-right ul {
         margin-top: 15px;
         font-size: 10px;
         padding: 5px;
     }
-    .footer2 p{
+
+    .footer2 p {
         width: 100%;
         border-top: 0.2px solid white;
     }
 }
-

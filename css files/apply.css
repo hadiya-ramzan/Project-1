@@ -178,24 +178,28 @@ h3 {
     font-size: large;
     color: rgb(63, 63, 218);
 }
-.statement{
+
+.statement {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.statement input{
+
+.statement input {
     display: inline-block;
     width: 10%;
     font-size: 15px;
 }
-.statement p{
+
+.statement p {
     width: 90%;
     padding: 10px;
     margin: 7px;
     font-size: 12px;
 }
-button{
+
+button {
     background-color: rgb(80, 80, 227);
     border: none;
     outline: none;
@@ -204,6 +208,7 @@ button{
     color: white;
     margin: 10px 10px 25px 250px;
 }
+
 footer {
     line-height: 20px;
 }
@@ -263,4 +268,186 @@ footer {
 .footer2 p {
     padding: 7px;
     padding-left: 45%;
+}
+
+/* media queries */
+
+@media screen and (min-width: 360px) and (max-width: 768px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    nav {
+        width: auto;
+        height: auto;
+        background-color: #172237;
+    }
+
+    .nav1,
+    .nav2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav1 p {
+        width: 100%;
+        text-align: center;
+        font-weight: 900;
+        padding-bottom: 15px;
+    }
+
+    .nav1 a {
+        padding: 5px;
+        font-weight: 600;
+    }
+
+    .nav1 img {
+        display: none;
+    }
+
+    .nav2 {
+        margin-top: 20px;
+    }
+
+    #logo {
+        margin: 5px;
+    }
+
+    .search-bar {
+        margin: 5px;
+        width: 85%;
+    }
+
+    .nav-cart,
+    .sign-in {
+        display: none;
+    }
+
+    .img img {
+        width: 100%;
+    }
+
+    form, .disclaimer {
+        width: 95%;
+        margin: 5px 5px 10px 10px;
+    }
+
+    #name,
+    #contact,
+    #email,
+    #location {
+        width: 150px;
+    }
+
+    #textarea{
+        width: 90%;
+        height: 70px;
+    }
+
+    button{
+        margin: 10px 10px 25px 300px;
+    }
+
+    .footer1 {
+        display: none;
+    }
+
+    .footer2 p {
+        width: 100%;
+        height: 20px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    nav {
+        width: 100%;
+        height: 140px;
+    }
+
+    .nav1,
+    .nav2 {
+        align-items: center;
+    }
+
+    .nav1 p {
+        padding: 5px;
+    }
+
+    .nav1 a {
+        font-size: 12px;
+        justify-content: space-evenly;
+        padding: 10px;
+    }
+
+    .nav2 {
+        margin: 5px;
+    }
+
+    .search-bar {
+        margin: 10px;
+        margin-top: 25px;
+        width: 100%;
+    }
+
+    .nav-cart {
+        width: 30%;
+        padding-left: 30px;
+    }
+
+    .sign-in {
+        padding: 25px;
+        width: 30%;
+    }
+
+    .img img {
+        width: 100%;
+    }
+
+    form, .disclaimer {
+        width: 95%;
+        margin: 5px 5px 15px 15px;
+    }
+
+    #name,
+    #contact,
+    #email,
+    #location {
+        width: 250px;
+    }
+
+    #textarea{
+        width: 90%;
+        height: 70px;
+    }
+
+    button{
+        margin: 10px 10px 25px 350px;
+    }
+
+    .footer {
+        height: 220px;
+    }
+
+    .footer-left ul {
+        margin-top: 15px;
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    .footer-right ul {
+        margin-top: 15px;
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    .footer2 p {
+        width: 100%;
+        border-top: 0.2px solid white;
+    }
 }
