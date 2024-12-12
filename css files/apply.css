@@ -88,6 +88,11 @@ p {
     padding-right: 50px;
 }
 
+.sign-in a {
+    color: white;
+    font-weight: 700;
+}
+
 #cart,
 #sign,
 #search-icon {
@@ -328,7 +333,8 @@ footer {
         width: 100%;
     }
 
-    form, .disclaimer {
+    form,
+    .disclaimer {
         width: 95%;
         margin: 5px 5px 10px 10px;
     }
@@ -340,12 +346,12 @@ footer {
         width: 150px;
     }
 
-    #textarea{
+    #textarea {
         width: 90%;
         height: 70px;
     }
 
-    button{
+    button {
         margin: 10px 10px 25px 300px;
     }
 
@@ -409,7 +415,8 @@ footer {
         width: 100%;
     }
 
-    form, .disclaimer {
+    form,
+    .disclaimer {
         width: 95%;
         margin: 5px 5px 15px 15px;
     }
@@ -421,12 +428,12 @@ footer {
         width: 250px;
     }
 
-    #textarea{
+    #textarea {
         width: 90%;
         height: 70px;
     }
 
-    button{
+    button {
         margin: 10px 10px 25px 350px;
     }
 

@@ -1,0 +1,335 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+}
+
+header {
+    font-size: 12px;
+    color: white;
+}
+
+nav {
+    height: 95px;
+    width: 100%;
+    background-color: #172237;
+}
+
+p {
+    display: inline-block;
+    width: 30%;
+}
+
+.nav1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 1px;
+    text-decoration: none !important;
+    text-transform: capitalize;
+}
+
+.nav1 a {
+    color: white;
+}
+
+.nav2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#logo {
+    margin-top: 15px;
+    margin-left: 8px;
+    width: 10rem;
+}
+
+.search-bar {
+    width: 50%;
+    background-color: rgb(231, 82, 28);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+}
+
+#search {
+    width: 94%;
+    height: 35px;
+    color: black;
+    padding-left: 7px;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+}
+
+#search-icon {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-cart {
+    width: 60px;
+    font-size: 14px;
+    align-content: center;
+    padding-left: 150px;
+}
+
+.sign-in {
+    width: 70px;
+    font-size: 14px;
+    align-content: center;
+    padding-right: 50px;
+}
+
+.sign-in a {
+    color: white;
+    font-weight: 700;
+}
+
+#cart,
+#sign,
+#search-icon {
+    font-size: large;
+}
+
+main {
+    background-color: rgb(226, 226, 243);
+}
+
+.d-card-img1,
+.d-card-img2,
+.d-card-img3  {
+    margin-left: 190px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.d-card-img1 img {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.d-card-img2 img {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.d-card-img3 img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+footer {
+    line-height: 20px;
+}
+
+.footer1 {
+    height: 200px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #172237;
+    color: white;
+}
+
+.footer1 p {
+    font-size: 15px;
+    font-weight: 600;
+    padding-bottom: 5px;
+    color: rgb(192, 176, 176);
+}
+
+.footer-left {
+    width: 60%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    margin-top: 0px;
+    font-size: 13px;
+}
+
+.footer-right {
+    width: 40%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    margin-top: 0px;
+    border-left: 2px solid white;
+    font-size: 13px;
+}
+
+#list1,
+#list2 {
+    padding: 20px;
+}
+
+.footer2 {
+    height: 40px;
+    border-top: 0.2px solid white;
+    background-color: #172237;
+    color: white;
+}
+
+.footer2 p {
+    padding: 7px;
+    padding-left: 45%;
+}
+
+/* media queries */
+
+@media screen and (min-width: 360px) and (max-width: 768px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    nav {
+        width: auto;
+        height: auto;
+        background-color: #172237;
+    }
+
+    .nav1,
+    .nav2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav1 p {
+        width: 100%;
+        text-align: center;
+        font-weight: 900;
+        padding-bottom: 15px;
+    }
+
+    .nav1 a {
+        padding: 5px;
+        font-weight: 600;
+    }
+
+    .nav1 img {
+        display: none;
+    }
+
+    .nav2 {
+        margin-top: 20px;
+    }
+
+    #logo {
+        margin: 5px;
+    }
+
+    .search-bar {
+        margin: 5px;
+        width: 85%;
+    }
+
+    .nav-cart,
+    .sign-in {
+        display: none;
+    }
+
+    .d-card-img1,
+    .d-card-img2,
+    .d-card-img3  {
+        margin: 0px 20px 10px 20px;
+        width: 90%;
+    }
+
+    .footer1 {
+        display: none;
+    }
+
+    .footer2 p {
+        width: 100%;
+        height: 20px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    nav {
+        width: 100%;
+        height: 140px;
+    }
+
+    .nav1,
+    .nav2 {
+        align-items: center;
+    }
+
+    .nav1 p {
+        padding: 5px;
+    }
+
+    .nav1 a {
+        font-size: 12px;
+        justify-content: space-evenly;
+        padding: 10px;
+    }
+
+    .nav2 {
+        margin: 5px;
+    }
+
+    .search-bar {
+        margin: 10px;
+        margin-top: 25px;
+        width: 100%;
+    }
+
+    .nav-cart {
+        width: 30%;
+        padding-left: 30px;
+    }
+
+    .sign-in {
+        padding: 25px;
+        width: 30%;
+    }
+
+    .d-card-img1,
+    .d-card-img2,
+    .d-card-img3 {
+        margin-left: 30px;
+        padding-top: 20px;
+        width: 90%;
+    }
+
+    .footer-left ul{
+        list-style-type: none;
+        margin-top: 15px;
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    .footer-right ul {
+        list-style-type: none;
+        margin-top: 15px;
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    .footer2 p {
+        width: 100%;
+        border-top: 0.2px solid white;
+    }
+}

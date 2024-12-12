@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" type="image/x-icon" href="/images/favicon.png">
 </head>
 
 <body>
@@ -25,9 +26,24 @@
                 <img src="/images/bismillah telemart.png" alt="" />
             </div>
             <div class="nav2">
-                <img id="logo" src="/images/logo.png" alt="" />
+                <a href="/index.html"><img id="logo" src="/images/logo.png" alt="" /></a>
                 <div class="search-bar">
-                    <input type="search" id="search" placeholder="What Are You Looking For?" />
+                    <label for="search"></label>
+                    <input list="search-options" name="search" id="search" placeholder="What Are You Looking For?" />
+                    <datalist id="search-options">
+                        <option value="Mobiles & Tablets">
+                        <option value="Men's Fashion">
+                        <option value="Women Fashion">
+                        <option value="Appliances">
+                        <option value="TV & Video">
+                        <option value="Kidsmart">
+                        <option value="Home & Living">
+                        <option value="Computer & Gaming">
+                        <option value="Automotive">
+                        <option value="Health & Care">
+                        <option value="Camera">
+                        <option value="Home Audio & Theatre">
+                    </datalist>
                     <div id="search-icon">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
@@ -37,8 +53,9 @@
                     <i id="cart" class="fa-solid fa-cart-shopping" style="color: white"></i>
                 </div>
                 <div class="sign-in">
-                    <b>Sign in</b>
-                    <i id="sign" class="fa-solid fa-user" style="color: #ffffff"></i>
+                    <a href="/html files/sign in.html">Sign in
+                        <i id="sign" class="fa-solid fa-user" style="color: #ffffff"></i>
+                    </a>
                 </div>
             </div>
         </nav>

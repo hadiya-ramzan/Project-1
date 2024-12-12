@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Pakistan's best online shopping store with great deals on electronics, fashion and more."> 
+    <meta name="description"
+        content="Pakistan's best online shopping store with great deals on electronics, fashion and more.">
     <title>TELEMART</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
 </head>
 
 <body>
@@ -23,12 +25,27 @@
                 <a href="/html files/insurance.html">takaful islamic insurance</a>
                 <a href="/html files/sell.html">sell on telemart</a>
                 <a href="/html files/support.html">support</a>
-                <img src="/images/bismillah telemart.png" alt="" />
+                <img src="/images/bismillah telemart.png" alt="">
             </div>
             <div class="nav2">
-                <img id="logo" src="/images/logo.png" alt="" />
+                <a href="/index.html"><img id="logo" src="/images/logo.png" alt="" /></a>
                 <div class="search-bar">
-                    <input type="search" id="search" placeholder="What Are You Looking For?" />
+                    <label for="search"></label>
+                    <input list="search-options" name="search" id="search" placeholder="What Are You Looking For?" />
+                    <datalist id="search-options">
+                        <option value="Mobiles & Tablets">
+                        <option value="Men's Fashion">
+                        <option value="Women Fashion">
+                        <option value="Appliances">
+                        <option value="TV & Video">
+                        <option value="Kidsmart">
+                        <option value="Home & Living">
+                        <option value="Computer & Gaming">
+                        <option value="Automotive">
+                        <option value="Health & Care">
+                        <option value="Camera">
+                        <option value="Home Audio & Theatre">
+                    </datalist>
                     <div id="search-icon">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
@@ -42,7 +59,6 @@
                         <i id="sign" class="fa-solid fa-user" style="color: #ffffff"></i>
                     </a>
                 </div>
-            </div>
         </nav>
     </header>
     <main>
@@ -51,7 +67,7 @@
                 <div class="categories">
                     <ul>
                         <li style="font-weight: 700;">TOP CATEGORIES</li>
-                        <li t>Mobiles & Tablets</li>
+                        <li>Mobiles & Tablets</li>
                         <li>Men's Fashion</li>
                         <li>Women Fashion</li>
                         <li>Appliances</li>
@@ -68,11 +84,12 @@
                 </div>
             </div>
             <div class="hero-img">
-                <img src="/images/sale.png" alt="">
+                <a href="/html files/kitchen appliances.html" target="_self"><img src="/images/hero-img.jpg" alt=""></a>
             </div>
             <div class="box-images">
-                <img class="image" src="/images/hero img1.png" alt="">
-                <img class="image" src="/images/hero img2.png" alt="">
+                <a href="/html files/debit card installments.html" target="_self"><img class="image"
+                        src="/images/hero img1.png" alt=""></a>
+                <a href="/html files/pre-owned.html"><img class="image" src="/images/hero img2.png" alt=""></a>
             </div>
             <div class="options">
                 <p id="sale">11-11 Sale</p>
@@ -85,59 +102,65 @@
                 <img src="/images/s1 img1.png" alt="">
             </div>
             <div class="img2 images">
-                <img src="/images/s1 img2.jpg" alt="">
-                <div class="details">
-                    <a href="Apple iPhone">Apple iPhone 16 128GB (Physical+eSIM) With Official Warranty</a></br>
-                    <button>
-                        4.2 <i class="fa-solid fa-star" style="color: #ffffff;"></i>
-                    </button> &nbsp;(39)</br>
-                </div>
-                <p class="new-price">Rs.355,000</p>
-            </div>
-            <div class=" img3 images">
-                <img src="/images/s1 img3.png" alt="">
-                <div class="details">
-                    <a href="Dawlance">Dawlance DWT-9060 EZ 9Kg Top Load Fully Automatic Washing Machine With Official
+                <figure><img src="/images/s1 img2.jpg" alt=""></figure>
+                <figcaption class="captions"><a href="/html files/iphone16(128GB).html">Apple iPhone 16 128GB
+                        (Physical+eSIM) With Official
                         Warranty</a></br>
                     <button>
-                        3.9<i class="fa-solid fa-star" style="color: #ffffff;"></i>
+                        4.2 <i class="fa-solid fa-star" style="color: #ffffff;"></i>
+                    </button> &nbsp;(39)
+                    <div class="new-price">Rs. 355,999 &nbsp;&nbsp;
+                    </div>
+                </figcaption>
+            </div>
+            <div class=" img3 images">
+                <figure><img src="/images/s1 img3.png" alt=""></figure>
+                <figcaption class="captions"><a href="/html files/Dawlance DWT-9060 EZ.html">Dawlance DWT-9060 EZ 9Kg
+                        Top Load Fully Automatic
+                        Washing Machine With Official
+                        Warranty</a></br>
+                    <button>
+                        3.9 <i class="fa-solid fa-star" style="color: #ffffff;"></i>
                     </button> &nbsp;(2)<br>
-                </div>
-                <p class="new-price">Rs.63,999</p>
+                    <div class="new-price">Rs. 63,999 &nbsp;&nbsp;<div class="old-price">Rs.65,999</div>
+                    </div>
+                </figcaption>
             </div>
             <div class="img4 images">
-                <input id="off" type="button" value="76% OFF">
-                <img src="/images/s1 img4.jpg" alt="">
-                <div class="details">
-                    <a href="power-bank">login LT-P5 10000 Mah Metal Power Bank</a><br>
+                <figure><img src="/images/s1 img4.jpg" alt=""></figure>
+                <figcaption class="captions"><a href="/html files/Power Bank.html">login LT-P5 10000 Mah Metal Power
+                        Bank</a><br>
                     <button>
-                        4.00<i class="fa-solid fa-star" style="color: #ffffff;"></i>
-                    </button> &nbsp;(23)</br>
-                </div>
-                <p class="new-price">Rs.3,899</p>
+                        4.0 <i class="fa-solid fa-star" style="color: #ffffff;"></i>
+                    </button> &nbsp;(23)
+                    <div class="new-price">Rs.3,899 &nbsp;&nbsp;<div class="old-price">Rs.16,499</div>
+                    </div>
+                </figcaption>
             </div>
             <div class="img5 images">
-                <img src="/images/s1 img5.jpg" alt="">
-                <div class="details">
-                    <a href="airpods">Loud TWS1099 Airpods Pro 2 True Wireless Earbuds</a></br>
+                <figure><img src="/images/s1 img5.jpg" alt=""></figure>
+                <figcaption class="captions"><a href="/html files/TWS1099 Airpods Pro.html">Loud TWS1099 Airpods Pro 2
+                        True Wireless Earbuds</a></br>
                     <button>
                         4.1 <i class="fa-solid fa-star" style="color: #ffffff;"></i>
-                    </button>(19)</br>
-                </div>
-                <p class="new-price">Rs.2,199</p>
+                    </button>(19)
+                    <div class="new-price">Rs.2,199 &nbsp;&nbsp;<div class="old-price">Rs.16,499</div>
+                    </div>
+                </figcaption>
             </div>
             <div class="img6 images">
-                <input id="off" type="button" value="9% OFF">
-                <img src="/images/s1 img6.jpg" alt="">
-                <div class="details">
-                    <a href="dell">Dell Latitude 7400 2-in-1 Core-i7-8th Gen 16 GB RAM 512 GB SSD 14.1″ Touchscreen
+                <figure><img src="/images/s1 img6.jpg" alt=""></figure>
+                <figcaption>
+                    <a
+                        href="/html files/Dell Latitude 7400 2-in-1 Core-i7-8th Gen 16 GB RAM 512 GB SSD 14.1″ Touchscreen Display Pre-Owned.html">Dell
+                        Latitude 7400 2-in-1 Core-i7-8th Gen 16 GB RAM 512 GB SSD 14.1″ Touchscreen
                         Display
                         Pre-Owned</a><br>
                     <button>
-                        4.3<i class="fa-solid fa-star" style="color: #ffffff;"></i>
-                    </button> &nbsp;(43)</br>
-                </div>
-                <p class="new-price">Rs.104,999</p>
+                        4.3 <i class="fa-solid fa-star" style="color: #ffffff;"></i>
+                    </button> &nbsp;(43)
+                    <div class="new-price">Rs.104,999</div>
+                </figcaption>
             </div>
             <div class="options">
                 <p id="sale">Mobiles & Tablets</p>
@@ -149,56 +172,62 @@
                 <img src="/images//s2 img1.png" alt="">
             </div>
             <div class="img2 images">
-                <img src="/images/s2 img2.jpg" alt="">
-                <div class="details">
-                    <a href="Samsung Galaxy">Samsung Galaxy A15 (8GB,256GB) Dual Sim With Official Warranty</a></br>
+                <figure><img src="/images/s2 img2.jpg" alt=""></figure>
+                <figcaption>
+                    <a href="/html files/Samsung Galaxy A15 (8GB,256GB) Dual Sim With Official Warranty.html">Samsung
+                        Galaxy A15 (8GB,256GB) Dual Sim With Official Warranty</a></br>
                     <button>
                         3.5 <i class="fa-solid fa-star" style="color: #ffffff;"></i>
                     </button> &nbsp;(49)
-                </div>
-                <p class="new-price">Rs.52,499</p>
+                    <div class="new-price">Rs.52,499</div>
+                </figcaption>
             </div>
             <div class="img3 images">
-                <img src="/images/s2 img3.jpg" alt="">
-                <div class="details">
-                    <a href="Realme C63">Realme C63 (8GB,128GB) Dual Sim With Official Warranty</a></br>
+                <figure><img src="/images/s2 img3.jpg" alt=""></figure>
+                <figcaption>
+                    <a href="/html files/Realme C63 (8GB,128GB) Dual Sim With Official Warranty.html">Realme C63
+                        (8GB,128GB) Dual Sim With Official Warranty</a></br>
                     <button>
-                        4.7<i class="fa-solid fa-star" style="color: #ffffff;"></i>
+                        4.7 <i class="fa-solid fa-star" style="color: #ffffff;"></i>
                     </button> &nbsp;(34)
-                </div>
-                <p class="new-price">Rs.38,266</p>
+                    <div class="new-price">Rs.38,266</div>
+                </figcaption>
             </div>
             <div class="img4 images">
-                <img src="/images/s2 img4.jpg" alt="">
-                <div class="details">
-                    <div class="details">
-                        <a href="Infinix Note 40">Infinix Note 40 (8GB 256GB) Dual Sim with Official Warrantyk</a><br>
-                        <button>
-                            4.3<i class="fa-solid fa-star" style="color: #ffffff;"></i>
-                        </button> &nbsp;(19)
-                    </div>
-                    <p class="new-price">Rs.51,499</p>
-                </div>
+                <figure><img src="/images/s2 img4.jpg" alt=""></figure>
+                <figcaption>
+                    <a href="/html files/Infinix Note 40 (8GB 256GB) Dual Sim with Official Warranty.html">Infinix Note
+                        40 (8GB 256GB) Dual Sim with Official Warranty</a><br>
+                    <button>
+                        4.3 <i class="fa-solid fa-star" style="color: #ffffff;"></i>
+                    </button> &nbsp;(19)
+
+                    <div class="new-price">Rs.51,499</div>
+                </figcaption>
             </div>
+
             <div class="img5 images">
-                <img src="/images/s2 img5.jpg" alt="">
-                <div class="details">
-                    <a href="Realme C65">Realme C65 (8GB,256GB) Dual Sim With Official Warranty</a></br>
+                <figure><img src="/images/s2 img5.jpg" alt=""></figure>
+                <figcaption>
+                    <a href="/html files/Realme C65 (8GB,256GB) Dual Sim With Official Warranty.html">Realme C65
+                        (8GB,256GB) Dual Sim With Official Warranty</a></br>
                     <button>
                         4.2 <i class="fa-solid fa-star" style="color: #ffffff;"></i>
                     </button> &nbsp;(21)
-                </div>
-                <p class="new-price">Rs.40,999</p>
+
+                    <div class="new-price">Rs.40,999</div>
+                </figcaption>
             </div>
             <div class="img6 images">
-                <img src="/images/s2 img6.jpg" alt="">
-                <div class="details">
-                    <a href="Xiaomi Redmi 13">Xiaomi Redmi 13 (8GB,128GB) Dual Sim With Official Warranty</a><br>
+                <figure><img src="/images/s2 img6.jpg" alt=""></figure>
+                <figcaption>
+                    <a href="/html files/Xiaomi Redmi 13 (8GB,128GB) Dual Sim With Official Warranty.html">Xiaomi Redmi
+                        13 (8GB,128GB) Dual Sim With Official Warranty</a><br>
                     <button>
-                        3.0<i class="fa-solid fa-star" style="color: #ffffff;"></i>
+                        3.0 <i class="fa-solid fa-star" style="color: #ffffff;"></i>
                     </button> &nbsp;(3)
-                </div>
-                <p class="new-price">Rs.36,749</p>
+                    <div class="new-price">Rs.36,749</div>
+                </figcaption>
             </div>
             <div class="options">
                 <p id="sale">Men's Fashion</p>
@@ -210,54 +239,61 @@
                 <img src="/images/s3 img1.png" alt="">
             </div>
             <div class="img2 images">
-                <img src="/images/s3 img2.jpg" alt="">
-                <div class="details">
-                    <a href="Samsung Galaxy">New Stylish Jogger for Men</a></br>
+                <figure><img src="/images/s3 img2.jpg" alt=""></figure>
+                <figcaption>
+                    <a href="/html files/New Stylish Jogger for Men.html">New Stylish Jogger for Men</a></br>
                     <button>
                         3.5 <i class="fa-solid fa-star" style="color: #ffffff;"></i>
                     </button>&nbsp;(11)
-                </div>
-                <p class="new-price">Rs.2,995</p>
+                    <div class="new-price">Rs.2,995 &nbsp;&nbsp;<div class="old-price">Rs.4,995</div>
+                </figcaption>
+
             </div>
             <div class="img3 images">
-                <img src="/images/s3 img3.jpg" alt="">
-                <div class="details">
-                    <a href="Shadow Voyager">Shadow Voyager | Inspired by 𝗢𝗺𝗯𝗿𝗲 𝗡𝗼𝗺𝗮𝗱𝗲</a><br>
+                <figure><img src="/images/s3 img3.jpg" alt=""></figure>
+                <figcaption>
+                    <a href="/html files/Shadow Voyager.html">Shadow Voyager | Inspired by 𝗢𝗺𝗯𝗿𝗲
+                        𝗡𝗼𝗺𝗮𝗱𝗲</a><br>
                     <button>
-                        4.7<i class="fa-solid fa-star" style="color: #ffffff;"></i>
+                        4.7 <i class="fa-solid fa-star" style="color: #ffffff;"></i>
                     </button>&nbsp;(6)
-                </div>
-                <p class="new-price">Rs.2,640</p>
+                    <div class="new-price">Rs.2,640 &nbsp;&nbsp;<div class="old-price">Rs.3,300</div>
+                </figcaption>
+
             </div>
             <div class="img4 images">
-                <img src="/images/s3 img4.jpg" alt="">
-                <div class="details">
-                    <a href="Tracksuit">Gambluss Gentlemen-Gen Winter Tracksuit-Navy</a><br>
+                <figure><img src="/images/s3 img4.jpg" alt=""></figure>
+                <figcaption>
+                    <a href="/html files/Tracksuit-Navy.html">Gambluss Gentlemen-Gen Winter Tracksuit-Navy</a><br>
                     <button>
-                        4.3<i class="fa-solid fa-star" style="color: #ffffff;"></i>
+                        4.3 <i class="fa-solid fa-star" style="color: #ffffff;"></i>
                     </button>&nbsp;(41)
-                </div>
-                <p class="new-price">Rs.4,600</p>
+                    <div class="new-price">Rs.4,600 &nbsp;&nbsp;<div class="old-price">Rs.8,999</div>
+                </figcaption>
             </div>
             <div class="img5 images">
-                <img src="/images/s3 img5.jpg" alt="">
-                <div class="details">
-                    <a href="smart watch">Samsung Galaxy R-L300 Watch 7 40mm</a></br>
+                <figure><img src="/images/s3 img5.jpg" alt=""></figure>
+                <figcaption>
+                    <a href="/html files/Samsung Galaxy R-L300 Watch 7 40mm.html">Samsung Galaxy R-L300 Watch 7
+                        40mm</a></br>
                     <button>
                         4.2 <i class="fa-solid fa-star" style="color: #ffffff;"></i>
                     </button>&nbsp;(3)
-                </div>
-                <p class="new-price">Rs.61,500</p>
+                    <div class="new-price">Rs.61,500 &nbsp;&nbsp;<div class="old-price">Rs.70,000</div>
+                </figcaption>
+
             </div>
             <div class="img6 images">
-                <img src="/images/s3 img6.jpg" alt="">
-                <div class="details">
-                    <a href="hood jacket">Black Full Sleeve Removable Hood Puffer Jacket</a><br>
+                <figure><img src="/images/s3 img6.jpg" alt=""></figure>
+                <figcaption>
+                    <a href="/html files/Black Full Sleeve Removable Hood Puffer Jacket.html">Black Full Sleeve
+                        Removable Hood Puffer Jacket</a><br>
                     <button>
-                        3.0<i class="fa-solid fa-star" style="color: #ffffff;"></i>
+                        3.0 <i class="fa-solid fa-star" style="color: #ffffff;"></i>
                     </button>&nbsp;(29)
-                </div>
-                <p class="new-price">Rs.3,799</p>
+                    <div class="new-price">Rs.3,799 &nbsp;&nbsp;<div class="old-price">Rs.7,999</div>
+                </figcaption>
+
             </div>
         </div>
         <div class="section4">
