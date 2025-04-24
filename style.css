@@ -345,6 +345,52 @@ button {
     padding-bottom: 10px;
 }
 
+.section1 a:link{
+    color: navy;
+}
+.section2 a:link{
+    color: navy;
+}
+.section3 a:link{
+    color: navy;
+}
+.section1 a:visited{
+    color: navy;
+}
+.section2 a:visited{
+    color: navy;
+}
+.section3 a:visited{
+    color: navy;
+}
+.section1 a:hover{
+    color: rgb(237, 16, 127);
+}
+.section2 a:hover{
+    color: rgb(237, 16, 127);
+}
+.section3 a:hover{
+    color: rgb(237, 16, 127);
+}
+.section1 a:active{
+    color: navy;
+}
+.section2 a:active{
+    color: navy;
+}
+.section3 a:active{
+    color: navy;
+}
+
+.section1 a:checked{
+    color: navy;
+}
+.section2 a:checked{
+    color: navy;
+}
+.section3 a:checked{
+    color: navy;
+}
 .footer1 {
     height: 200px;
     padding: 30px;
@@ -393,8 +439,7 @@ button {
     padding: 7px;
     padding-left: 45%;
 }
-
-@media screen and (min-width: 360px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
     * {
         box-sizing: border-box;
     }
@@ -496,7 +541,7 @@ button {
 
     .images {
         background-color: white;
-        width: 100%;
+        max-width: 100vw;
     }
 
     .images:hover {
@@ -505,12 +550,13 @@ button {
     }
 
     .img1 {
-        width: 40%;
-        margin-top: 25px;
+        width: 35vw;
+        margin: 25px;
     }
 
     .img1 img {
-        width: 100%;
+        max-width: 60%;
+        max-height: 50%;
     }
 
     .img2,
@@ -518,28 +564,18 @@ button {
     .img4,
     .img5,
     .img6 {
-        width: 35%;
-        padding: 10px;
+        min-width: 35vw;
+        margin: 25px;
+
     }
 
-    .img2 img {
-        width: 100%;
-    }
-
-    .img3 img {
-        width: 100%;
-    }
-
-    .img4 img {
-        width: 100%;
-    }
-
-    .img5 img {
-        width: 100%;
-    }
-
+    .img2 img,
+    .img3 img,
+    .img4 img,
+    .img5 img,
     .img6 img {
-        width: 100%;
+        max-width: 80%;
+        max-height: 70%;
     }
 
     .section4 {
